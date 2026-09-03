@@ -192,6 +192,48 @@
   .cbar-labels { display: flex; justify-content: space-between; font-size: 10px; color: var(--ink-3); }
 
   .drive-actions { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+  .paper-btn {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px; border-radius: 8px; text-decoration: none;
+    background: linear-gradient(135deg, rgba(199,146,234,0.15), rgba(79,209,255,0.08));
+    border: 1px solid var(--violet); color: var(--ink);
+    font-size: 13px; margin-bottom: 12px;
+  }
+  .paper-btn:hover { background: rgba(199,146,234,0.25); text-decoration: none; }
+  .paper-btn .ic {
+    width: 26px; height: 26px; border-radius: 6px; background: rgba(199,146,234,0.2);
+    display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0;
+  }
+  .paper-btn .lbl { display: flex; flex-direction: column; overflow: hidden; }
+  .paper-btn .lbl b { font-weight: 500; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .paper-btn .lbl small { color: var(--ink-3); font-size: 10.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* Sources index bar (footer expansion) */
+  .sources-bar {
+    padding: 16px 24px; background: var(--panel);
+    border-top: 1px solid var(--line);
+  }
+  .sources-bar h4 {
+    margin: 0 0 10px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-3); font-weight: 600;
+  }
+  .sources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+  .src-card {
+    display: flex; gap: 10px; padding: 10px 12px;
+    background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px;
+    text-decoration: none; color: var(--ink); transition: all 0.15s;
+  }
+  .src-card:hover { border-color: var(--violet); text-decoration: none; }
+  .src-card .badge {
+    width: 32px; height: 32px; border-radius: 6px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600;
+    background: rgba(199,146,234,0.15); color: var(--violet);
+  }
+  .src-card .info { display: flex; flex-direction: column; overflow: hidden; min-width: 0; }
+  .src-card .info b { font-size: 12.5px; font-weight: 500; }
+  .src-card .info small { font-size: 10.5px; color: var(--ink-3); margin-top: 2px; }
+  .src-card .info .n { color: var(--cyan); font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; margin-top: 3px; }
   .drive-btn {
     display: flex; align-items: center; gap: 10px;
     padding: 10px 14px; border-radius: 8px; text-decoration: none;
@@ -299,6 +341,11 @@
   </aside>
 </main>
 
+<div class="sources-bar">
+  <h4>📄 Dataset source papers &amp; landing pages — click any card to open the paper</h4>
+  <div class="sources-grid" id="sources-grid"></div>
+</div>
+
 <footer>
   <div>
     <span id="foot-total">655 scenes</span> · <span id="foot-thumbs"></span> ·
@@ -330,6 +377,74 @@
   var CAT_MAP = {}; CATEGORIES.forEach(function (c) { CAT_MAP[c.id] = c; });
   var COVERAGE = P.coverage || {};
   var SHARED_FOLDER = P.shared_folder_url || 'https://drive.google.com/drive/folders/1ZrBRIEX9dPXJsif7lu2gakZ6RxLmrvJp';
+
+  // -------- Source papers / dataset landing pages ------------------------
+  // Each dataset the corpus draws from has an authoritative landing page.
+  // A scene's source is inferred from its sensor / stem; that page becomes
+  // a per-scene "Read paper" button in the detail pane.
+  var SOURCES = {
+    HAD100: {
+      code:  'HAD',
+      name:  'HAD-100 · Hyperspectral Anomaly Detection Benchmark',
+      short: 'Zhao et al. — HAD-100',
+      url:   'https://zhaoxuli123.github.io/HAD100/',
+      note:  '100 AVIRIS-NG anomaly-target cubes + 522 clean-background tiles',
+    },
+    WHU_Hi: {
+      code:  'WHU',
+      name:  'WHU-Hi · Wuhan University UAV Hyperspectral Datasets',
+      short: 'RSIDEA WHU-Hi',
+      url:   'https://rsidea.whu.edu.cn/resource_WHUHiriver_sharing.htmz',
+      note:  'HongHu / HanChuan / LongKou — Nano-Hyperspec agricultural scenes',
+    },
+    MUUFL: {
+      code:  'MUF',
+      name:  'MUUFL Gulfport Hyperspectral &amp; LiDAR Dataset',
+      short: 'GatorSense MUUFL Gulfport',
+      url:   'https://github.com/GatorSense/MUUFLGulfport',
+      note:  'Univ. of Southern Mississippi Gulfport campus, 11 classes',
+    },
+    ZENODO_HAD: {
+      code:  'ZEN',
+      name:  'Hyperspectral Anomaly Detection benchmark package',
+      short: 'Zenodo record 13370800',
+      url:   'https://zenodo.org/records/13370800',
+      note:  'ABU / San Diego / HYDICE-urban benchmark cubes',
+    },
+    HF_AGG: {
+      code:  'HF',
+      name:  'HSI_Datasets · HuggingFace mirror',
+      short: 'HuggingFace (Tanishq165)',
+      url:   'https://huggingface.co/datasets/Tanishq165/HSI_Datasets',
+      note:  'Salinas · Pavia · Indian Pines · Botswana · KSC · classic HSI benchmarks',
+    },
+  };
+
+  function sourceFor(s) {
+    if (!s) return null;
+    var stem = String(s.stem || '');
+    var sens = String(s.sensor || '').toLowerCase();
+    // AVIRIS-NG flight targets + clean-background = HAD-100
+    if (/^ang\d{8}/.test(stem) || sens === 'aviris_ng') return SOURCES.HAD100;
+    // WHU-Hi UAV scenes
+    if (/^whu_/.test(sens))                             return SOURCES.WHU_Hi;
+    // MUUFL Gulfport
+    if (sens === 'muufl')                               return SOURCES.MUUFL;
+    // ABU / San Diego / HYDICE-urban benchmark package
+    if (sens === 'abu' || /sandiego/i.test(stem) || /hydice/i.test(stem)) return SOURCES.ZENODO_HAD;
+    // Everything else (Salinas, Pavia, Indian Pines, Botswana, KSC, Trento, ...)
+    return SOURCES.HF_AGG;
+  }
+
+  function sourceCounts() {
+    var m = {}; Object.keys(SOURCES).forEach(function (k) { m[k] = 0; });
+    SCENES.forEach(function (s) {
+      var src = sourceFor(s); if (!src) return;
+      var key = Object.keys(SOURCES).find(function (k) { return SOURCES[k] === src; });
+      if (key) m[key]++;
+    });
+    return m;
+  }
 
   // --- State --------------------------------------------------------------
   var state = {
@@ -621,6 +736,24 @@
       ]));
     }
 
+    // Source paper button — the authoritative landing page for this scene's dataset
+    var src = sourceFor(s);
+    if (src) {
+      body.appendChild(h('h4', {style:'margin:8px 0 10px;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#8892A6'}, [
+        'Source paper / dataset landing page'
+      ]));
+      body.appendChild(h('a', {
+        class: 'paper-btn', href: src.url, target: '_blank', rel: 'noopener',
+        title: 'Open ' + src.name,
+      }, [
+        h('div', {class:'ic'}, ['📄']),
+        h('div', {class:'lbl'}, [
+          h('b', {}, [src.short]),
+          h('small', {}, [src.note])
+        ])
+      ]));
+    }
+
     // Drive action buttons — the whole point
     body.appendChild(h('h4', {style:'margin:8px 0 10px;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#8892A6'}, [
       'Open on Google Drive'
@@ -674,8 +807,29 @@
     renderGrid();
   }
 
+  function renderSourcesIndex() {
+    var grid = document.getElementById('sources-grid'); if (!grid) return;
+    grid.innerHTML = '';
+    var counts = sourceCounts();
+    Object.keys(SOURCES).forEach(function (k) {
+      var s = SOURCES[k]; var n = counts[k] || 0;
+      grid.appendChild(h('a', {
+        class: 'src-card', href: s.url, target: '_blank', rel: 'noopener',
+        title: s.name,
+      }, [
+        h('div', {class:'badge'}, [s.code]),
+        h('div', {class:'info'}, [
+          h('b', {}, [s.short]),
+          h('small', {}, [s.note]),
+          h('span', {class:'n'}, [n + ' scenes in corpus  ·  open →'])
+        ])
+      ]));
+    });
+  }
+
   // --- Boot ---------------------------------------------------------------
   renderStats();
+  renderSourcesIndex();
   renderAll();
 
   // Auto-select first scene with a Drive preview, so the visualization is
