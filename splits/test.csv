@@ -1,0 +1,15 @@
+stem,sensor,sensor_family,tier,category,category_label,anomaly_type,bands,height,width,anomaly_px,anomaly_pct,cube_url,gt_url,preview_url
+abu-urban-1,abu,AVIRIS family,anomaly_benchmark,urban_buildings,Urban / Buildings / Settlements,Urban anomalies,100,100,100,0,,https://drive.google.com/file/d/1s6rUH63mqPFg4EnOodXcsupe-Qti9g8r/view,,https://drive.google.com/file/d/1WZeoWJFvNBm6gG0oduOKTMlZjP8FL-s-/view
+abu-urban-2,abu,AVIRIS family,anomaly_benchmark,urban_buildings,Urban / Buildings / Settlements,Urban anomalies,100,100,100,0,,https://drive.google.com/file/d/1-EeymJOHTKfD86iHg7YKPrEXQhHdZlgk/view,,https://drive.google.com/file/d/1nDvCMDfS22pShl8jQ1-avYaaNQ9HZ003/view
+loukia,loukia,Classification benchmarks,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,176,176,249,146,0.062,https://drive.google.com/file/d/1Di56A0_Du1vgQq4OcMmJ39eus4zOg2Ot/view,https://drive.google.com/file/d/1EAIN8qzIypNY77LLNliainlh4XpbXgAG/view,https://drive.google.com/file/d/1Yr4t2-pvVk-qD08oT8KqWsV1u-J8GEUB/view
+Chikusei,chikusei,Hyperspec-VNIR,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,128,128,2335,1084,0.018,https://drive.google.com/file/d/1k5d5PjRvgiwbWDQTt3yZpEmd8OvJgfU9/view,https://drive.google.com/file/d/150VCGEGRz6PzlBFgtSURiScv6tid2ahp/view,
+PaviaC,pavia_c,ROSIS,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,102,102,1096,2685,0.343,https://drive.google.com/file/d/1z6IOSrWPeXdbx1NWLdx0kHRb3aVRiNPC/view,https://drive.google.com/file/d/16ijbvXFk1jH49FiMGhpp2FWdu2_Fu6Y3/view,
+ang20171012t194435_27,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,27,0.659,,,
+ang20170821t183707_127,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,15,0.366,,,
+ang20170821t183707_111,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,22,0.537,,,
+ang20170821t183707_94,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,96,2.344,,,
+ang20170821t183707_110,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,16,0.391,,,
+ang20170908t225309_32,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,100,100,52,0.52,,,
+ang20170908t225309_37,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,100,100,54,0.54,,,
+ang20170821t183707_123,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,45,1.099,,,
+ang20170908t225309_35,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,41,1.001,,,

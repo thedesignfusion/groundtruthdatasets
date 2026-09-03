@@ -1,0 +1,104 @@
+stem,sensor,sensor_family,tier,category,category_label,anomaly_type,bands,height,width,anomaly_px,anomaly_pct,cube_url,gt_url,preview_url
+abu-beach-3,abu,AVIRIS family,anomaly_benchmark,water_dams_coast,"Water, Dams & Coast",Beach anomalies,100,100,100,0,,https://drive.google.com/file/d/1FVhafLiGPETLjZ6BY1UKlz2spqDwvS26/view,,https://drive.google.com/file/d/1p1fjLXEsgA3RCtbwQcXE86kScYui5BED/view
+abu-airport-1,abu,AVIRIS family,anomaly_benchmark,aircraft,Aircraft on tarmac,Aircraft on tarmac,100,100,100,0,,https://drive.google.com/file/d/1vxz2UzQclnJ7UVR2wMk7iZ4RHitS8Jpe/view,,https://drive.google.com/file/d/17AX5biU8jbgkAgxcHuGUxd1Jf7rMJnUL/view
+abu-airport-2,abu,AVIRIS family,anomaly_benchmark,aircraft,Aircraft on tarmac,Aircraft on tarmac,100,100,100,0,,https://drive.google.com/file/d/1inniKDB_DNnlFcM_HN2n9QWritX_WqSO/view,,https://drive.google.com/file/d/1D89MRCjYZJzhmnSO-LPIZRiDYM1Gitij/view
+abu-beach-1,abu,AVIRIS family,anomaly_benchmark,water_dams_coast,"Water, Dams & Coast",Beach anomalies,150,150,150,0,,https://drive.google.com/file/d/16mnz6naDAjTZI3vc4psfd7OLVCBVtjbm/view,,https://drive.google.com/file/d/16-uk6tj5EaugekSb98uWqhZ0KyoyZX3-/view
+abu-urban-4,abu,AVIRIS family,anomaly_benchmark,urban_buildings,Urban / Buildings / Settlements,Urban anomalies,100,100,100,0,,https://drive.google.com/file/d/1TyGGme3uwMooia1MQwntuKoklJ7PPQcY/view,,https://drive.google.com/file/d/1beQnvBB6XBQVH0syKfzIwKHBHuOLqLV7/view
+abu-beach-4,abu,AVIRIS family,anomaly_benchmark,water_dams_coast,"Water, Dams & Coast",Beach anomalies,102,150,150,0,,https://drive.google.com/file/d/1E7J-o1cQoeG8OJT0vlP08SzMMNfTW8xQ/view,,https://drive.google.com/file/d/1imEFSD-lybp4iHQ9lAziRYWrc_aEgnIt/view
+abu-airport-4,abu,AVIRIS family,anomaly_benchmark,aircraft,Aircraft on tarmac,Aircraft on tarmac,100,100,100,0,,https://drive.google.com/file/d/1RVnkvr1FtdZvq3UXQx2OyvUykOFo_BNx/view,,https://drive.google.com/file/d/1MaNaFWZuH-dszxqZKLi9kkolxpe_5ceq/view
+abu-urban-3,abu,AVIRIS family,anomaly_benchmark,urban_buildings,Urban / Buildings / Settlements,Urban anomalies,100,100,100,0,,https://drive.google.com/file/d/1e1SW_szOUpnWiJMAwEP9ZEOtSsHGHMQ5/view,,https://drive.google.com/file/d/1BZrF08dFmLMUDwKMztTg6SDsqtBORPN7/view
+Sandiego,san_diego,AVIRIS family,anomaly_benchmark,aircraft,Aircraft on tarmac,Aircraft (San Diego),100,100,100,0,,https://drive.google.com/file/d/1XjSl5NiliT4CxXXBsi-9I4WEdzok7cdC/view,,https://drive.google.com/file/d/1Gq04TaOJSEj5tWqdsrZK_A04FAlx91YA/view
+HYDICE-urban,hydice,HYDICE,anomaly_benchmark,roads_vehicles,Roads & Vehicles,Urban vehicles (HYDICE),80,80,100,0,,https://drive.google.com/file/d/1l0cgDpvVDmJeUXTK2mEelZqQJYgLHsCe/view,,
+Trento,trento,AISA Eagle,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,63,63,166,479,0.481,https://drive.google.com/file/d/1YprvXjr_i97LXghCcCfTBpoC_48G_Mwy/view,https://drive.google.com/file/d/1gE2teIQrCYxSyPSGP0Af2TJcDngZlwju/view,https://drive.google.com/file/d/1J20BmBt9R2-bhFppuy2e9C5f0Q4iYLth/view
+WHU_Hi_HongHu,whu_honghu,WHU-Hi Nano-Hyperspec,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,270,940,475,15555,3.484,https://drive.google.com/file/d/19v8-Z-bcY0ZOcsNSZUGkUTYq5qcCRLmr/view,https://drive.google.com/file/d/1_fdDMCMzaLkuwB4CgbGqzD2EBsIBx2eI/view,
+indian_pines,indian_pines,AVIRIS family,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,145,200,145,187,0.889,https://drive.google.com/file/d/1qLxBDM3a3bp_5zYLY0kha3AP_7bq5J8H/view,https://drive.google.com/file/d/1WatpFDlv2O6i2TNtDUW1j8QxBzUxVITJ/view,https://drive.google.com/file/d/1nnqztAEe6_hKcTleUs8asAO-Sr1gBSld/view
+Botswana,botswana,AVIRIS family,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,145,145,1476,95,0.025,https://drive.google.com/file/d/1aO1BruA0RNF5yzQMElXBbF40cvfEIcAC/view,https://drive.google.com/file/d/14Nai1nkMoLazGviWKwCIuzlAcVU5_Ps0/view,https://drive.google.com/file/d/1yXR_OsoVSpr5AKzyU62itoB3yYGzEMMB/view
+Utopia,utopia,Classification benchmarks,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,432,478,595,202,0.071,https://drive.google.com/file/d/1Awt6Eynj3vMnREUlHxd-UKyvFN64HRtX/view,https://drive.google.com/file/d/1UKjUPND7Wrt-8bW4l_VlFMchIGULVNy9/view,https://drive.google.com/file/d/1rOh8W28_EQtAZoSBhd8o9_LvwTrvoF26/view
+muufl,muufl,AVIRIS family,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,64,64,325,918,1.284,https://drive.google.com/file/d/1ZFWL4EkXqc6ykHGeNJ8QFRIAShSUM2qT/view,https://drive.google.com/file/d/1BC3Rr8ghbro2X5e2qPWm1ZRpjZikG2c1/view,https://drive.google.com/file/d/1Rhq1NSUzTyQFWlSFILdyeAKGoihoUKKc/view
+berlin,berlin,EnMAP,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,244,244,1723,6672,0.814,https://drive.google.com/file/d/1_wJD3o4TbtaOtmSQGJCFgss5vkAPyYaV/view,https://drive.google.com/file/d/1btHhUOF7pu-devHOsZB3MrnrNr4PXy4q/view,https://drive.google.com/file/d/15tLkFyiCRVix9OkP6BfURiGtsF4Eygx3/view
+holden,holden,Classification benchmarks,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,418,418,595,458,0.184,https://drive.google.com/file/d/1AQbjmO-CKqrQwSh5OXRIUlZsOeKx8SY1/view,https://drive.google.com/file/d/1ryApI5hInqaw7RODpwc1HkIXbJTk2Y0A/view,https://drive.google.com/file/d/16XXFauc8MrVc1O_IQkwtYiEFEFLr7zvb/view
+PaviaU,pavia_u,ROSIS,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,103,610,340,947,0.457,https://drive.google.com/file/d/1JTu2bGI09WSLEv4RpL-LDrqnf_M4k4dT/view,https://drive.google.com/file/d/1tdn9jHmQsEC1GiJsejvnHE-JN--03CLE/view,
+dioni,dioni,Classification benchmarks,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,176,176,250,150,0.044,https://drive.google.com/file/d/16x7aOG8A7BwJOkJpM6AYjViOq5S1OXa1/view,https://drive.google.com/file/d/1Ezfk7cWPeNvorzBaAm976VsUy6dzzuCK/view,https://drive.google.com/file/d/1SlPGWQ8GL_tLqUsELcU5K4DsjW4f78wT/view
+WHU_Hi_HanChuan,whu_hanchuan,WHU-Hi Nano-Hyperspec,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,274,1217,303,2336,0.633,https://drive.google.com/file/d/1W-R7jIkx-FiQjI4-RbjrLbjywJtR5Ppi/view,https://drive.google.com/file/d/1qJG7E_JHGWAG-_Pdq9JKx9GVHw8BrrDp/view,
+salinas,salinas,AVIRIS family,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,204,204,512,916,0.824,https://drive.google.com/file/d/1XuVlJyTiSPvZa9r2MNy43OfIZjklLdgL/view,https://drive.google.com/file/d/1uxlLV3JxpX3KXLCsKo0kkQdpTtihzaYo/view,https://drive.google.com/file/d/1_RT5q805P9AINwac906sOFYlgNKkkcd7/view
+pingan,pingan,Classification benchmarks,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,176,176,1230,16453,1.338,https://drive.google.com/file/d/1OLQd8MR40HyIa7QjckrLZ7Gq7KMCFFvG/view,https://drive.google.com/file/d/1w8_0Vlwl3TiMdzXG-z-N_SDyUzEGiN3i/view,https://drive.google.com/file/d/1NFBocVGySBKhmsDDxvvqdt4FlZXv8pEZ/view
+qingyun,qingyun,Classification benchmarks,classification_repurpose,urban_buildings,Urban / Buildings / Settlements,Rare-class anomaly,176,176,880,9767,0.816,https://drive.google.com/file/d/1X_sOZEhPRpqeiLKkq3XmVRXUekBUjU8A/view,https://drive.google.com/file/d/11YLEm0j0e5trj9gh491kfEIat3yBz9Xg/view,https://drive.google.com/file/d/1xGK11qqphn6KnYx5Dcq5-m-bWrv-tdM9/view
+KSC,ksc,AVIRIS family,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,176,176,512,105,0.033,https://drive.google.com/file/d/1IJGvfwSKJO_qBVuIzXNTo_XYjQKEKBi4/view,https://drive.google.com/file/d/1VXpmDPhLuIWsHqI97DIVtwK0jnv02clh/view,https://drive.google.com/file/d/1MwGwCdaArSVRe4qPoTckJ0v7XJNrEeoi/view
+NiliFossae,nili_fossae,Classification benchmarks,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,425,478,593,228,0.08,https://drive.google.com/file/d/1tyeIhp7J4g4oZjrpCkxrkGx_fv7Ut-fI/view,https://drive.google.com/file/d/1J4sO-liEMZUZjzjQUyoXyCOOqjbE2tlk/view,https://drive.google.com/file/d/19E8T5XT01Rcu_4umzhgxmDcTEubDmGg4/view
+WHU_Hi_LongKou,whu_longkou,WHU-Hi Nano-Hyperspec,classification_repurpose,vegetation_ag,Vegetation & Agriculture,Rare-class anomaly,270,550,400,3031,1.378,https://drive.google.com/file/d/1zohgOiswl7tcpWKem2UdGkNrUCWfLr9q/view,https://drive.google.com/file/d/1CivhGqzKu8ctJLf8dXZQxDVuX05vPoKA/view,
+ang20170821t183707_105,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,27,0.659,,,
+ang20170821t183707_119,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,25,0.61,,,
+ang20170821t183707_99,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,53,1.294,,,
+ang20170821t183707_109,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,14,0.342,,,
+ang20191004t215336_13,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,45,1.099,,,
+ang20171012t194435_23,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,70,70,74,1.51,,,
+ang20170821t183707_124,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,100,100,34,0.34,,,
+ang20191004t215336_12,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,30,0.732,,,
+ang20170821t183707_117,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,25,0.61,,,
+ang20170821t183707_107,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,8,0.195,,,
+ang20170821t183707_125,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,18,0.439,,,
+ang20170825t173426_15,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,16,0.391,,,
+ang20191004t185054_23,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,12,0.293,,,
+ang20210614t141018_33,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,18,0.439,,,
+ang20170821t183707_100,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,15,0.366,,,
+ang20170821t183707_120,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,12,0.293,,,
+ang20170821t183707_128,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,42,1.025,,,
+ang20170908t225309_36,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,100,100,80,0.8,,,
+ang20170821t183707_118,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,23,0.562,,,
+ang20170821t183707_106,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,15,0.366,,,
+ang20191027t204454_10,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,20,0.488,,,
+ang20170908t225309_33,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,20,0.488,,,
+ang20170821t183707_101,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,27,0.659,,,
+ang20170821t183707_103,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,11,0.269,,,
+ang20170825t173426_16,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,47,1.147,,,
+ang20170821t195229_24,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,18,0.439,,,
+ang20191004t185054_25,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,40,0.977,,,
+ang20191004t185054_22,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,70,70,46,0.939,,,
+ang20171012t194435_31,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,34,0.83,,,
+ang20170821t183707_98,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,6,0.146,,,
+ang20171012t194435_32,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,56,1.367,,,
+ang20170821t183707_95,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,85,2.075,,,
+ang20171012t194435_25,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,52,1.27,,,
+ang20170821t183707_104,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,33,0.806,,,
+ang20170821t183707_97,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,12,0.293,,,
+ang20170821t183707_112,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,118,2.881,,,
+ang20171012t194435_33,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,69,1.685,,,
+ang20170821t183707_116,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,12,0.293,,,
+ang20170908t225309_39,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,80,80,27,0.422,,,
+ang20170821t183707_91,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,43,1.05,,,
+ang20170821t195229_21,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,100,100,178,1.78,,,
+ang20170908t225309_40,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,67,1.636,,,
+ang20171012t194435_28,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,43,1.05,,,
+ang20210614t141018_34,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,17,0.415,,,
+ang20170821t195229_26,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,48,1.172,,,
+ang20170821t195229_23,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,17,0.415,,,
+ang20210614t141018_32,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,86,81,70,1.005,,,
+ang20170821t183707_93,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,21,0.513,,,
+ang20170908t225309_38,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,12,0.293,,,
+ang20170821t183707_115,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,30,0.732,,,
+ang20170821t195229_28,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,13,0.317,,,
+ang20170821t183707_102,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,100,100,134,1.34,,,
+ang20191004t185054_27,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,75,75,251,4.462,,,
+ang20171012t194435_35,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,29,0.708,,,
+ang20180227t082814_18,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,12,0.293,,,
+ang20170821t195229_27,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,17,0.415,,,
+ang20171012t194435_26,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,14,0.342,,,
+ang20170821t183707_108,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,21,0.513,,,
+ang20170908t225309_31,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,14,0.342,,,
+ang20170908t225309_34,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,120,120,30,0.208,,,
+ang20170821t183707_113,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,10,0.244,,,
+ang20191004t215336_11,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,35,0.854,,,
+ang20170821t183707_126,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,15,0.366,,,
+ang20170825t173426_18,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,46,1.123,,,
+ang20170821t195229_22,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,70,1.709,,,
+ang20210614t141018_36,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,41,1.001,,,
+ang20191004t185054_26,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,39,0.952,,,
+ang20170825t173426_17,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,100,100,51,0.51,,,
+ang20170821t195229_25,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,9,0.22,,,
+ang20170821t183707_121,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,20,0.488,,,
+ang20180227t082814_16,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,8,0.195,,,
+ang20180227t082814_15,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,100,100,32,0.32,,,
+ang20170825t173426_14,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,100,100,54,0.54,,,
+ang20210614t141018_35,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,26,0.635,,,
+ang20171012t194435_30,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,24,0.586,,,
+ang20191004t185054_24,aviris_ng,AVIRIS family,anomaly_benchmark,calibration,Calibration / Survey Targets,AVIRIS-NG survey target,425,64,64,53,1.294,,,
