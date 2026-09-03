@@ -478,7 +478,7 @@
       var hasGT   = !!(s.gt   && s.gt.file_id);
       var hasPrev = !!(s.preview && s.preview.file_id);
       var thumbSrc = s.thumb
-        ? ('data:image/png;base64,' + s.thumb)
+        ? (s.thumb.indexOf('data:') === 0 ? s.thumb : 'data:image/jpeg;base64,' + s.thumb)
         : (hasPrev ? s.preview.thumbnail : null);
 
       var card = h('div', {
@@ -553,7 +553,11 @@
     if (!s) return;
     var cat = CAT_MAP[s.category] || { color: '#666', label: 'Other' };
     var hasPrev = !!(s.preview && s.preview.file_id);
-    var previewSrc = hasPrev ? s.preview.thumbnail : (s.thumb ? 'data:image/png;base64,' + s.thumb : null);
+    var previewSrc = hasPrev
+      ? s.preview.thumbnail
+      : (s.thumb
+          ? (s.thumb.indexOf('data:') === 0 ? s.thumb : 'data:image/jpeg;base64,' + s.thumb)
+          : null);
 
     wrap.appendChild(h('div', {class:'detail-head'}, [
       h('div', {class:'stem'}, [s.stem]),
